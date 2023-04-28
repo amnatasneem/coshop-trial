@@ -1,52 +1,15 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Dashboard</title>
-    <!-- <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
-    <link href="assets/styles/output.css" rel="stylesheet" />
-    <script src="components/menu.js" type="text/javascript" defer></script>
-    <script src="components/topnav.js" type="text/javascript" defer></script> -->
-  </head>
-  <body class="m-0 bg-cream">
-    <topnav-component></topnav-component>
+<html>
+<head>
+	<title>MovieCRUDLite</title>
+</head>
+<body>
+	<h1>MovieCRUDLite</h1>
+	<p>This application utilizes MongoDB Atlas and supports the follow CRUD features:</p>
+	<a href="create.html">Create</a><br />
+	<a href="read">Read</a><br /><br />
 
-    <div class="flex">
-      <menu-component></menu-component>
-      <main class="w-full p-12">
-        <div>
-          <h1 class="text-4xl font-bold">Dashboard</h1>
-          <div class="my-4 flex items-center justify-between">
-            <button
-              name="get_location"
-              type="submit"
-              class="rounded-sm bg-orange-300 px-2 py-1 text-sm hover:bg-orange-400"
-              id="get_location"
-            >
-              <i class="fa-solid fa-location-dot"></i>
-              View Current Location
-            </button>
-            <div class="flex items-center gap-2 border-b border-black py-1">
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <input
-                type="search"
-                placeholder="Search for store..."
-                class="bg-transparent p-1"
-              />
-            </div>
-          </div>
-          <div id="map">
-            <iframe
-              id="google_map"
-              src="https://maps.google.co.uk?output=embed"
-              class="h-96 w-full border-none"
-            ></iframe>
-          </div>
-        </div>
-      </main>
-    </div>
-    <!-- <script src="assets/scripts/map.js"></script> -->
-  </body>
+	<em>Todo: Implement your own MongoDB Atlas Organization, Project, Database Cluster, Database, and Collection.</em><br />
+	<em>Todo: Implement and fully test the Update and Delete function of CRUD.</em>
+</body>
 </html>

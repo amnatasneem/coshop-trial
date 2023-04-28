@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Register</title>
+    <!-- <link rel="icon" href="../assets/logo.svg" type="image/svg+xml" />
+    <link href="../assets/styles/output.css" rel="stylesheet" />
+    <script
+      src="../assets/scripts/previewImage.js"
+      type="text/javascript"
+    ></script>
+    <script src="../assets/scripts/matchPasswords.js" defer></script> -->
+  </head>
+  <body>
+    <div class="absolute top-4 left-4">
+      <div class="flex items-center">
+        <!-- <img src="../assets/logo-black.svg" alt="logo" class="h-10" /> -->
+        <p class="text-lg">
+          <span class="font-bold">Co</span><span>Shop</span>
+        </p>
+      </div>
+    </div>
+    <main class="grid min-h-screen grid-cols-2">
+      <div
+        class="col-span-2 flex items-center justify-center text-center lg:col-span-1"
+      >
+        <form
+          autocomplete="on"
+          class="grid gap-2"
+          method="post"
+          action="/register"
+          enctype="application/x-www-form-urlencoded"
+        >
+          <h1 class="text-5xl font-black">Create an Account</h1>
+          <p class="text-lg">Get started for free!</p>
+
+          <!-- <div
+            id="pic-preview"
+            class="mx-auto flex aspect-square w-36 items-center justify-center rounded-full bg-cover bg-center transition-all duration-300 hover:bg-black/50 hover:bg-blend-overlay"
+            style="background-image: url('../assets/images/blank-profile.jpg')"
+          > -->
+            <input
+              id="profile-picture"
+              type="file"
+              accept="image/jpg, image/jpeg, image/png"
+              onchange="readURLPP(this);"
+              class="hidden"
+            />
+            <label
+              for="profile-picture"
+              class="flex items-center justify-center gap-2 text-sm"
+              ><i
+                class="fa-solid fa-camera p-9 text-xl text-white opacity-0 hover:opacity-100"
+              ></i>
+            </label>
+          </div>
+
+          <input
+            class="border-b border-gray-200 py-2 pl-2"
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            autocomplete="name"
+            required
+          />
+
+          <input
+            class="border-b border-gray-200 py-2 pl-2"
+            type="email"
+            name="email"
+            placeholder="Email"
+            autocomplete="email"
+            required
+          />
+
+          <input
+            class="mt-1 border-b border-gray-200 py-2 pl-2"
+            type="password"
+            name="pass1"
+            placeholder="Password"
+            autocomplete="new-password"
+            required
+          />
+
+          <input
+            class="mt-1 border-b border-gray-200 py-2 pl-2"
+            type="password"
+            name="pass2"
+            placeholder="Confirm password"
+            autocomplete="new-password"
+            required
+          />
+          <p id="popupAlert" class="text-sm font-semibold text-red-500"></p>
+          <button
+            type="submit"
+            class="mt-2 bg-yellow-500 py-2 font-bold text-white hover:bg-yellow-600"
+          >
+            Register
+          </button>
+          <a href="" class="text-right text-sm font-bold">Privacy Policy</a>
+          <p class="mt-1">
+            Already a member?
+            <!-- <a href="login.html" class="font-bold">Login here</a> -->
+          </p>
+        </form>
+      </div>
+
+      <div class="hidden lg:grid">
+        <div
+          class="flex items-center justify-center"
+          data-aos="fade-left"
+          data-aos-duration="700"
+          data-aos-once="true"
+        >
+          <!-- <div class="h-5/6 w-5/6 rounded-full bg-yellow-400"></div>
+          <img
+            src="../assets/images/app-window.png"
+            alt=""
+            class="absolute h-2/4 rounded-lg"
+          />
+        </div> -->
+      </div>
+    </main>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <!-- <script>
+      AOS.init();
+    </script> -->
+  </body>
+</html>
